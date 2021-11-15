@@ -8,14 +8,29 @@ $ python3 -m venv env
 $ source env/bin/activate
 $ pip3 install -r requirments.txt
 ```
-## Run
+## Run Server/hosting service - Using Docker 
 
-Run each in different terminal window
+```
+# Build the docker container
+$ docker build -t flask-app:latest .
+
+# Run the docker container
+$ docker run -d -p 5000:5000 flask-app
+
+```
+
+## Run Server/hosting service - Directly
 
 ```
 # Hosting Service
 $ python3 app/autoapp.py
+```
 
+## Run Clients
+
+Run these in different terminal/bash window.
+
+```
 # Client - 1  Endpoint '/policy/<int>policy_id'
 $ python3 test.py
 

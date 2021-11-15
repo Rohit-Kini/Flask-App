@@ -17,7 +17,7 @@ for i in range(len(policy)):
     response = requests.put(BASE+"policy/" + str(i), policy[i])
     print(response.json())
 
-input()
+input("Press Enter to proceed!")
 
 """
 # 2. GET Method - Retrieving the policy from the database
@@ -26,7 +26,7 @@ print("2. Get Method - Retrieving the policy from the database")
 response = requests.get(BASE+ "policy/5")
 print(response.json())
 
-input()
+input("Press Enter to proceed!")
 
 """
 # 3. PATCH Method - Update the data from the existing database
@@ -35,7 +35,7 @@ print("3. Patch Method - Updating the data from the existing database")
 response = requests.patch(BASE+"policy/4", {"customer_age":35})
 print(response.json())
 
-input()
+input("Press Enter to proceed!")
 
 """
 # 4. DELETE Method - Delete a policy from the database
@@ -46,7 +46,7 @@ print(response.json())
 print("Deleting Policy #3......")
 response = requests.delete(BASE+"policy/3")
 
-input()
+input("Press Enter to proceed!")
 
 """
 # 5. POST Method - Check if exisiting policy is ACCEPT or REJECT

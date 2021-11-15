@@ -13,3 +13,4 @@ develop-eggs/
 *.egg-info/
 .installed.cfg
 *.egg
+*.db-journal

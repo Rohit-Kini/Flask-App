@@ -1,0 +1,15 @@
+__pycache__/
+env/
+bin/
+build/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+develop-eggs/
+*.egg-info/
+.installed.cfg
+*.egg
